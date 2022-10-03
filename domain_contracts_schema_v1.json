@@ -1,0 +1,134 @@
+{
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "default":
+    {},
+    "title": "The schema for data object of the TCR of domain contracts.",
+    "required":
+    [
+        "name",
+        "domain",
+        "token",
+        "contracts"
+    ],
+    "properties":
+    {
+        "name":
+        {
+            "type": "string",
+            "default": "",
+            "title": "The name Schema",
+            "examples":
+            [
+                "Oasis"
+            ]
+        },
+        "domain":
+        {
+            "type": "string",
+            "default": "",
+            "title": "The domain Schema",
+            "examples":
+            [
+                "oasis.app"
+            ]
+        },
+        "token":
+        {
+            "type": "string",
+            "default": "",
+            "title": "The token Schema",
+            "examples":
+            [
+                "MKR"
+            ]
+        },
+        "contracts":
+        {
+            "type": "array",
+            "default":
+            [],
+            "title": "The contracts Schema",
+            "items":
+            {
+                "type": "object",
+                "title": "A Schema",
+                "required":
+                [
+                    "address"
+                ],
+                "properties":
+                {
+                    "address":
+                    {
+                        "type": "string",
+                        "title": "The address Schema",
+                        "examples":
+                        [
+                            "0x6b175474e89094c44da98b954eedeac495271d0f",
+                            "0x39755357759ce0d7f32dc8dc45414cca409ae24e",
+                            "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2",
+                            "0x5ef30b9986345249bc32d8928b7ee64de9435e39"
+                        ]
+                    }
+                },
+                "examples":
+                [
+                    {
+                        "address": "0x6b175474e89094c44da98b954eedeac495271d0f"
+                    },
+                    {
+                        "address": "0x39755357759ce0d7f32dc8dc45414cca409ae24e"
+                    },
+                    {
+                        "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2"
+                    },
+                    {
+                        "address": "0x5ef30b9986345249bc32d8928b7ee64de9435e39"
+                    }
+                ]
+            },
+            "examples":
+            [
+                [
+                    {
+                        "address": "0x6b175474e89094c44da98b954eedeac495271d0f"
+                    },
+                    {
+                        "address": "0x39755357759ce0d7f32dc8dc45414cca409ae24e"
+                    },
+                    {
+                        "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2"
+                    },
+                    {
+                        "address": "0x5ef30b9986345249bc32d8928b7ee64de9435e39"
+                    }
+                ]
+            ]
+        }
+    },
+    "examples":
+    [
+        {
+            "name": "Oasis",
+            "domain": "oasis.app",
+            "token": "MKR",
+            "contracts":
+            [
+                {
+                    "address": "0x6b175474e89094c44da98b954eedeac495271d0f"
+                },
+                {
+                    "address": "0x39755357759ce0d7f32dc8dc45414cca409ae24e"
+                },
+                {
+                    "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2"
+                },
+                {
+                    "address": "0x5ef30b9986345249bc32d8928b7ee64de9435e39"
+                }
+            ]
+        }
+    ]
+}
