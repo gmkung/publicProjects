@@ -10,6 +10,7 @@
         "name",
         "domain",
         "token",
+        "blockchain",
         "contracts"
     ],
     "properties":
@@ -42,6 +43,17 @@
             "examples":
             [
                 "MKR"
+            ]
+        },
+        "blockchain":
+        {
+            "type": "string",
+            "default": "",
+            "title": "The blockchain Schema",
+            "examples":
+            [
+                "Ethereum",
+                "Solana"
             ]
         },
         "contracts":
@@ -114,6 +126,7 @@
             "name": "Oasis",
             "domain": "oasis.app",
             "token": "MKR",
+            "blockchain": "Ethereum",
             "contracts":
             [
                 {
