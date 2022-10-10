@@ -4,13 +4,12 @@
     "type": "object",
     "default":
     {},
-    "title": "The schema for data object of the TCR of domain contracts.",
+    "title": "The schema for data object of the TCR of contract domain names.",
     "required":
     [
         "version",
         "name",
         "domain",
-        "token",
         "blockchain",
         "contracts"
     ],
